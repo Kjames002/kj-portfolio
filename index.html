@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Karleca J. Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,10 +27,16 @@
     <!--main-->
     <main>
         <!--welcome section-->
-        <section class= "welcome" id="welcome">
+		   <section class= "welcome" id="welcome">
             <h1>Welcome</h1>
-            <img src="headshot.jpg" alt="Headshot of Karleca James" class="headshot">
-            <p class="intro">Hello, my name is Karleca James and I am a Junior enrolled at Florida Agricultural and Mechanical University. I am a highly organized and hard-working individual looking for a reliable position to gain practical experience in engineering operations. I am a diligent team player who strives in various environments and is committed to producing high-quality work.  I am driven by a strong passion for problemsolving and a curiosity to understand building and infrastructure around me. </p>
+		 <div class="container">
+      <div>
+        <img src="headshot.jpg" alt="Headshot of Karleca James" class="headshot">
+      </div>
+      <div class="intro">
+                   <p >Hello, my name is Karleca James and I am a Junior enrolled at Florida Agricultural and Mechanical University. I am a highly organized and hard-working individual looking for a reliable position to gain practical experience in engineering operations. I am a diligent team player who strives in various environments and is committed to producing high-quality work.  I am driven by a strong passion for problemsolving and a curiosity to understand building and infrastructure around me. </p>
+      </div>
+    </div>
         </section>
 		
 		<!--biography section-->
@@ -51,9 +58,9 @@
         </section>
 
         <!--skills section -->
-        <section id="skill">
+        <section id="skills">
             <h2>Skills</h2>
-            <table>
+            <table class= "table">
   <tr>
     <th>Detail Oriented</th>
     <th>Time Management</th>
@@ -75,12 +82,16 @@
 		<!-- famu article -->
 <article id="HBCU">
             <h1 class="HCBU" >About my HBCU</h1>
-       <table><tr>
-    <th>Florida Agricultural and Mechanical University.<br>"Top Public HBCU for the 6th Consecutive Year! Founded October 3, 1887, Florida Agricultural and Mechanical University (FAMU) is a public, historically Black university located in Tallahassee, Florida."<br>-<a href="https://www.famu.edu/about-famu/index.php#:~:text=Top%20Public%20HBCU%20for%20the,university%20located%20in%20Tallahassee%2C%20Florida.">FAMU Article</a></th>
-    <th><iframe width="400" height="225" 
-src="https://www.youtube.com/embed/q7gAepjfCYk?si=ihL247tr0v3ocrxq&amp;controls=0&autoplay=1&mute=1" ></iframe></th></tr>
-</table>
-        <p>I am not only proud to attend Floridas' top HBCU but because its well known for there S.T.E.A.M circuriulum. Especially there engineering programs that provides opportunities for hands-on learning, research, and practical application. This universities is also notable for their commitment to sustainable design, infrastructure development, and community engagement. </p>
+			 <div class="container2">
+      <div>
+       <iframe width="400" height="225" 
+src="https://www.youtube.com/embed/q7gAepjfCYk?si=ihL247tr0v3ocrxq&amp;controls=0&autoplay=1&mute=1" ></iframe>
+      </div>
+      <div class="famu">
+      <p ><b>Florida Agricultural and Mechanical University.</b><br>"Top Public HBCU for the 6th Consecutive Year! Founded October 3, 1887, Florida Agricultural and Mechanical University (FAMU) is a public, historically Black university located in Tallahassee, Florida."<br>-<a href="https://www.famu.edu/about-famu/index.php#:~:text=Top%20Public%20HBCU%20for%20the,university%20located%20in%20Tallahassee%2C%20Florida.">FAMU Article</a> </p>
+      </div>
+    </div>
+	<p>I am not only proud to attend Floridas' top HBCU but because its well known for there S.T.E.A.M circuriulum. Especially there engineering programs that provides opportunities for hands-on learning, research, and practical application. This universities is also notable for their commitment to sustainable design, infrastructure development, and community engagement. </p>
 		</article>
 		
 		<!--contact section -->
@@ -111,9 +122,12 @@ src="https://www.youtube.com/embed/q7gAepjfCYk?si=ihL247tr0v3ocrxq&amp;controls=
         </section>
     </main>
 
-    <!-- Footer -->
+    <!--footer-->
     <footer>
         <p>&copy; 2024 Karleca James. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
     </footer>
 </body>
 </html>
