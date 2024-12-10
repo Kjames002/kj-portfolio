@@ -47,7 +47,7 @@ nav ul li:hover{
 }
 
 
-/* Sections */
+/*sections*/
 section {
     padding: 20px;
 	width:900px;
@@ -88,7 +88,7 @@ article h1 {
 	font-family: Georgia, serif;
 }
 
-/* Grid Layout */
+/*grid*/
 
 .grid-layout {
     display: grid;
@@ -137,11 +137,11 @@ tr th{ padding: 15px;
  grid-template-columns: 1fr 1fr;
  column-gap: 5px;
 }
-article iframe{
+ iframe{
 	border: 10px solid #082647;
 	border-radius: 8px;
 }
-/* Footer */
+/*footer*/
 footer {
     text-align: center;
     padding: 10px;
@@ -150,7 +150,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Form */
+/*form*/
 form label {
     display: block;
     margin-top: 10px;
@@ -172,7 +172,7 @@ form button {
 }
 
 /*response*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 910px){
 	nav{
 		display:flex;
 	justify-content:center;
@@ -191,17 +191,17 @@ form button {
 	justify-content:center;
 	}
 	section {
-	width:80%;
+	width:90%;
 	}
 	tr th {
 	padding: 5px;}
 	.table{
-	font-size:9px;
+	font-size:12px;
 	width: 100%;
 	  margin-left: 0px;
 	}
 	article{
-	width:80%;
+	width:90%;
 	}
 	iframe{
 	width:80%;
@@ -229,3 +229,4 @@ border: 10px solid #082647;
   grid-template-rows: auto auto;}
   form input, form textarea, form button{
     width: 80%;}
+	}
