@@ -36,7 +36,8 @@ nav ul li a{
 	text-decoration:none;
     font-family: Georgia, serif;
 	font-size:1.2em;
-	color:#fff;
+}
+div {color:#fff;
 }
 
 nav ul li a:hover{
