@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body h1{font-family: Georgia, serif;
 }
 body h2{font-family: Georgia, serif;
@@ -33,8 +29,6 @@ nav ul{
 }
 nav ul li{
 	padding:10px 20px;
-	
-
 	display: block;
 	text-align:center;
 }
@@ -64,26 +58,21 @@ section {
 
 }
 
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 2fr;
+ column-gap: 5px;
+}
+
 .headshot {
-    width: 200px;
+  width: 200px;
     height: 200px;
     border-radius: 50%;
 	border: 10px solid #082647;
-    display: block; 
-	position: relative;
-    left: 610px;
+  
+}
 
-}
-.welcome{
-	width:900px;
-	height:300px
-}
-.intro{
-	width:600px;
-	position: relative;
-	bottom: 190px;
-	padding-bottom: 10px;
-}
 article {
     padding: 20px;
     margin: 20px auto;
@@ -133,16 +122,20 @@ article h1 {
 }
 table {
   width: 700px;
-  margin-left:75px;
   font-family: Georgia, serif;
+   border-collapse: collapse;
+  table-layout: fixed;
+  margin-left: 100px;
 }
 tr th{ padding: 15px;
+ overflow-wrap: break-word;
 }
-article table{
-	width:800px;
-	text-align:center;
-	margin-left:0px;
-	font-family: Georgia, serif;
+
+.container2 {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr;
+ column-gap: 5px;
 }
 article iframe{
 	border: 10px solid #082647;
@@ -168,6 +161,7 @@ form input, form textarea, form button {
     margin-top: 5px;
     padding: 10px;
 	border-radius: 8px;
+border: 1px solid #082647;
 }
 
 form button {
@@ -176,21 +170,62 @@ form button {
     border: none;
     cursor: pointer;
 }
-@media only screen and (max-width: 760px){
+
+/*response*/
+@media only screen and (max-width: 800px){
+	nav{
+		display:flex;
+	justify-content:center;
+	}
     nav ul {
-		width: 275px;
         flex-direction: column;
+		width: 100%;
 		height:300px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 50%;
+		margin-right: 50%;
 	 }
-	
 .logo{
-    width: 275px;
-    height:275px;
-	display: block;
-	margin-top:10 px;
-	margin-left: auto;
-		margin-right: auto;
-	}}
+	width:50%;
+	height: auto;
+	display: block;	
+	justify-content:center;
+	}
+	section {
+	width:80%;
+	}
+	tr th {
+	padding: 5px;}
+	.table{
+	font-size:9px;
+	width: 100%;
+	  margin-left: 0px;
+	}
+	article{
+	width:80%;
+	}
+	iframe{
+	width:80%;
+	height:80%;	
+border: 10px solid #082647;
+	border-radius: 8px;
+	}
+	.headshot {
+  width: 200px;
+    height: 200px;
+    border-radius: 50%;
+	border: 10px solid #082647;
+  justify-content:center;
+	}
+	.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: none;
+  grid-template-rows: auto auto;
+}
+ 	.container2 {
+ display: grid;
+ align-items: center;  
+ grid-template-columns: none;
+  grid-template-rows: auto auto;}
+  form input, form textarea, form button{
+    width: 80%;}
